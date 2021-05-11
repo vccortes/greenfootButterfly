@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Placar extends Actor
 {
     public static int Pontos; { // variável estático com o nome "Pontos" e recebe o valor de 2.
-        Pontos = 0;
+        Pontos = 2;
     }
     /**
      * Act - do whatever the Placar wants to do. This method is called whenever
@@ -18,7 +18,7 @@ public class Placar extends Actor
     public void act() 
     {
         getWorld().showText("Pontuação: " + Pontos, 60, 10); //exibir texto mais os pontos já somados ,a posição x (60) e y (10).
-        if(Pontos ==-1){ // se os Pontos for igual a 0. 
+        if(Pontos ==0){ // se os Pontos for igual a 0. 
             getWorld().showText("Game Over", getWorld().getWidth()/2, getWorld().getHeight()/2); // exebir texto "Game Over".
             Greenfoot.stop(); // parar o jogo.
         }
